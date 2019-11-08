@@ -1,1 +1,16 @@
 // Mixins Here
+.btn(@Fcolor,@bgc) {
+  color: @Fcolor;
+  background-color: @bgc;
+  width: 30%;
+  height: 3.8rem;
+  font-size: 2rem;
+  text-align: center;
+  padding: 3% 0;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: @Fcolor;
+    color: @bgc;
+  }
+}
