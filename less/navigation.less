@@ -1,7 +1,8 @@
 // Navigation code here
 .top {
-  display: flex;
+  .flexIt(center);
   flex-direction: column;
+
   align-items: center;
   background-color: @wild-sand;
   h1 {
@@ -9,8 +10,7 @@
   }
 
   nav {
-    display: flex;
-    justify-content: space-between;
+    .flexIt(space-between);
     align-items: center;
     width: 30%;
     font-size: 1.8rem;
