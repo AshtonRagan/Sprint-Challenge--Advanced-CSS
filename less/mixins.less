@@ -22,3 +22,10 @@
   width: @width;
   height: @height;
 }
+.anim(@dely,@time) {
+  visibility: hidden;
+  animation-name: fade;
+  animation-delay: @dely;
+  animation-duration: @time;
+  visibility: visible;
+}

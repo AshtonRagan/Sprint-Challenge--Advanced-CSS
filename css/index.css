@@ -160,7 +160,20 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .top {
+  visibility: hidden;
+  animation-name: fade;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  visibility: visible;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -188,6 +201,13 @@ p {
   text-decoration: none;
   color: black;
 }
+.home .intro {
+  visibility: hidden;
+  animation-name: fade;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  visibility: visible;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -201,6 +221,11 @@ p {
   }
 }
 .home .space-images {
+  visibility: hidden;
+  animation-name: fade;
+  animation-delay: 0s;
+  animation-duration: 3s;
+  visibility: visible;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -221,6 +246,11 @@ p {
   border-radius: 20px;
 }
 .home .visit-planets {
+  visibility: hidden;
+  animation-name: fade;
+  animation-delay: 0s;
+  animation-duration: 3.5s;
+  visibility: visible;
   padding: 15px;
 }
 .home .visit-planets h3 {
@@ -230,6 +260,11 @@ p {
   margin-top: 13px;
 }
 .home .walk {
+  visibility: hidden;
+  animation-name: fade;
+  animation-delay: 0s;
+  animation-duration: 4s;
+  visibility: visible;
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
