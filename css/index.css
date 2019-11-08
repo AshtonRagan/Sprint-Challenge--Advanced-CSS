@@ -273,6 +273,13 @@ p {
 }
 @media (max-width: 500px) {
   .home .walk {
+    width: 100%;
+    margin: 0%;
+    padding: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk {
     flex-direction: column-reverse;
   }
 }
