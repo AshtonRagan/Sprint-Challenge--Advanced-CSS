@@ -9,13 +9,27 @@
     p {
       padding: 0 15px;
     }
+    @media @fone {
+      .topImg {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    @media @fone {
+      .sky,
+      .launch {
+        display: none;
+      }
+      .blast {
+        width: 90%;
+      }
+    }
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -42,9 +56,14 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @fone {
+      flex-direction: column-reverse;
+    }
     .walk-text {
       width: 50%;
+      @media @fone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -56,6 +75,11 @@
 
       .btn {
         .btn(white, @btn-bg-color);
+        @media @fone {
+          width: 100%;
+          height: 70px;
+          padding: 5% 0;
+        }
       }
     }
 
@@ -67,6 +91,11 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+      @media @fone {
+        width: 100%;
+        height: 100%;
+        margin: 3% 0;
       }
     }
   }

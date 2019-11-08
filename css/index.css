@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -164,6 +164,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f6f6f6;
 }
 .top h1 {
   font-size: 3.9rem;
@@ -176,6 +177,12 @@ p {
   font-size: 1.8rem;
   margin: 1%;
 }
+@media (max-width: 500px) {
+  .top nav {
+    width: 90%;
+    margin: 3%;
+  }
+}
 .top nav a {
   text-decoration: none;
   color: black;
@@ -186,10 +193,25 @@ p {
 .home .intro p {
   padding: 0 15px;
 }
+@media (max-width: 500px) {
+  .home .intro .topImg {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 90%;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -213,8 +235,18 @@ p {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -224,7 +256,7 @@ p {
 }
 .home .walk .walk-text .btn {
   color: white;
-  background-color: #22283A;
+  background-color: #22283a;
   width: 30%;
   height: 3.8rem;
   font-size: 2rem;
@@ -234,7 +266,14 @@ p {
 }
 .home .walk .walk-text .btn:hover {
   background-color: white;
-  color: #22283A;
+  color: #22283a;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 70px;
+    padding: 5% 0;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
@@ -244,6 +283,13 @@ p {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    height: 100%;
+    margin: 3% 0;
+  }
 }
 footer {
   color: #22283B;
